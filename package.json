@@ -1,0 +1,25 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "serve public",
+    "build:dev": "tsc --watch",
+    "start:dev": "node --watch .",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/node": "^20.11.30",
+    "husky": "^9.1.7",
+    "serve": "^14.2.4",
+    "typescript": "^5.4.3"
+  }
+}
