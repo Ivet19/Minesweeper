@@ -1,29 +1,54 @@
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(#c1f622, #06cab4);
   height: 100vh;
+  margin: 0;
+}
+
+main {
+  padding: 20px 30px;
+  margin: 0;
+}
+
+.root {
+  height: 100vh;
+  margin: 0;
 }
 
 .main-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
 }
 
 .main-header__title {
   font-family: "Syne Mono", monospace;
-  font-size: 3.75rem;
+  font-size: 3.15rem;
   font-weight: 400;
-  font-style: normal;
+  text-shadow: #1e1e1e7c 1px 0 10px;
   color: #000;
-  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+
+.game-instructions {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #06cab3a3;
+  box-shadow: 10px 5px 5px #1e1e1ea0;
+  border: solid 1px #000;
+  border-radius: 8px;
+  font-family: "Syne Mono", monospace;
+  font-size: 0.95rem;
+}
+
+.game-instructions__subtitle {
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.7rem;
 }
