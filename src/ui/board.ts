@@ -1,9 +1,16 @@
 import { Cell, Board } from "./types.js";
 
-const getBoardGame = (numberA: number = 5, numberB: number = 5): Board => {
+export const getBoardGame = (
+  numberA: number = 5,
+  numberB: number = 5
+): Board => {
   const board: Board = [];
   const rowsTotal = numberA;
   const columnsTotal = numberB;
+
+  if (numberA !== numberB) {
+    throw new Error("There must be the same number of rows and columns");
+  }
 
   for (let rowNumber = 0; rowNumber < numberA; rowNumber++) {
     board[rowNumber] = [];
