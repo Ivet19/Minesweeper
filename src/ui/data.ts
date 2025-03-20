@@ -1,4 +1,4 @@
-import { Cell, Board } from "./types.js";
+import { Cell } from "./types.js";
 
 export const boardCell: Cell = {
   hasMine: false,

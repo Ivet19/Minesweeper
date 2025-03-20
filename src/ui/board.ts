@@ -1,6 +1,7 @@
 import { Cell, Board } from "./types.js";
+import { addMines } from "./mines.js";
 
-export const getBoardGame = (
+export const getGameBoard = (
   numberA: number = 5,
   numberB: number = 5
 ): Board => {
@@ -26,4 +27,6 @@ export const getBoardGame = (
   return board;
 };
 
-console.log(getBoardGame());
+let gameBoard = getGameBoard();
+
+addMines(gameBoard);
