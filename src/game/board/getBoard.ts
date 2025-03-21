@@ -9,6 +9,7 @@ export const getBoard = (dimension: number): Board => {
 
   for (let rowNumber = 0; rowNumber < dimension; rowNumber++) {
     board[rowNumber] = [];
+
     for (let columnNumber = 0; columnNumber < dimension; columnNumber++) {
       const cell: Cell = {
         hasMine: false,
@@ -19,5 +20,6 @@ export const getBoard = (dimension: number): Board => {
       board[rowNumber][columnNumber] = cell;
     }
   }
+
   return board;
 };
