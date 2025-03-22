@@ -4,7 +4,7 @@ import { Board } from "../../types.js";
 export const renderBoard = (board: Board): void => {
   const cells = board.flat();
   const boardElement = document.createElement("ul");
-  const boardContainer = document.querySelector("board-container");
+  const boardContainer = document.querySelector(".board-container");
 
   if (!boardContainer) {
     throw new Error("Missing board element");
