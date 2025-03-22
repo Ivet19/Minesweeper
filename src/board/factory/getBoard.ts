@@ -1,4 +1,4 @@
-import { Cell, Board } from "../types.js";
+import { Cell, Board } from "../../types";
 
 export const getBoard = (dimension: number): Board => {
   if (dimension < 4) {

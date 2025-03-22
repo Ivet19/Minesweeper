@@ -1,10 +1,7 @@
-import { Board } from "../types.js";
-import { getBoard } from "../board/getBoard.js";
+import { Board } from "../../types";
 
 export const addMines = (board: Board, probability: number = 0.15): Board => {
   const gameBoard = board;
-
-  debugger;
 
   gameBoard.forEach((row) => {
     row.forEach((cell) => {
@@ -15,5 +12,3 @@ export const addMines = (board: Board, probability: number = 0.15): Board => {
   });
   return gameBoard;
 };
-
-addMines(getBoard(5));
