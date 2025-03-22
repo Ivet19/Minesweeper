@@ -1,4 +1,4 @@
-import { getBoard } from "../getBoard";
+import { getBoard } from "../factory/getBoard";
 
 describe("Given the getBoardGame function", () => {
   describe("When it recives a dimension of 4", () => {
