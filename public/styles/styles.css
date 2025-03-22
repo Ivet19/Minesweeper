@@ -14,6 +14,34 @@ main {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1f622;
+
+  &:hover {
+    background-color: #87a230;
+  }
+}
+
+.hidden > * {
+  visibility: hidden;
+}
+
 .root {
   height: 100vh;
   margin: 0;
@@ -23,6 +51,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 .main-header__title {
@@ -31,6 +60,24 @@ main {
   font-weight: 400;
   text-shadow: #1e1e1e7c 1px 0 10px;
   color: #000;
+  margin-bottom: 15px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  background-color: #06cab3a3;
+  box-shadow: 10px 5px 5px #1e1e1ea0;
+  border: solid 1px #000;
+  border-radius: 8px;
+  font-family: "Syne Mono", monospace;
+  font-size: 0.95rem;
 }
 
 .game-instructions {
@@ -43,12 +90,12 @@ main {
   border: solid 1px #000;
   border-radius: 8px;
   font-family: "Syne Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
 
 .game-instructions__subtitle {
   padding: 0;
   margin: 0;
   font-weight: 800;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
 }

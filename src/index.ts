@@ -1,6 +1,9 @@
 import { getBoard } from "./board/factory/getBoard.js";
 import { addMines } from "./mines/factory/addMines.js";
+import { renderBoard } from "./board/ui/renderBoard.js";
 
-const board = getBoard(5);
+export const board = getBoard(10);
 
-addMines(board);
+export const minedBoard = addMines(board);
+
+renderBoard(minedBoard);
