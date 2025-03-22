@@ -4,6 +4,7 @@ import { Board } from "../../types.js";
 export const renderBoard = (board: Board): void => {
   const cells = board.flat();
   const boardElement = document.createElement("ul");
+  boardElement.classList.add("cells");
   const boardContainer = document.querySelector(".board-container");
 
   if (!boardContainer) {
@@ -16,6 +17,8 @@ export const renderBoard = (board: Board): void => {
     cellContainer.classList.add("cell-container");
     cellElement.classList.add("cell");
     cellElement.ariaLabel = "open cell";
+
+    cellElement.addEventListener("click", () => {});
 
     cellContainer.appendChild(cellElement);
 
