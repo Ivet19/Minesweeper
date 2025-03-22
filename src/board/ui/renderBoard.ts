@@ -14,7 +14,6 @@ export const renderBoard = (board: Board): void => {
   cells.forEach((cell) => {
     const cellContainer = document.createElement("li");
     const cellElement = document.createElement("button");
-    cellContainer.classList.add("cell-container");
     cellElement.classList.add("cell");
     cellElement.ariaLabel = "open cell";
 
