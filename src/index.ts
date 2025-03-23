@@ -1,7 +1,7 @@
 import { getBoard } from "./board/getBoard.js";
 import { addMines } from "./mines/addMines.js";
 import { renderBoard } from "./board/ui/renderBoard.js";
-import { setAdjacentMinesTotal } from "./board/adjacentMines/setAdjacentMines.js";
+import { setAdjacentMinesTotal } from "./mines/adjacentMines/setAdjacentMines.js";
 
 export const emptyBoard = getBoard(10);
 
