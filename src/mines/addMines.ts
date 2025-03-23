@@ -1,4 +1,4 @@
-import { Board } from "../../types";
+import { Board } from "../types";
 
 export const addMines = (board: Board, probability: number = 0.15): Board => {
   const gameBoard = board;
