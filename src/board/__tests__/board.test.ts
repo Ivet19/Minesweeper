@@ -21,7 +21,7 @@ describe("Given the getBoardGame function", () => {
       expect(actualResult).toBe(expectedResult);
     });
 
-    test("Ten it should return a board with no adjacent mines", () => {
+    test("Then it should return a board with no adjacent mines", () => {
       const dimension = 4;
       const cells = getBoard(dimension).flat();
       const expectedResult = true;
