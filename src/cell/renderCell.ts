@@ -11,6 +11,9 @@ export const renderCell = (
 
       return cellElement;
     }
+
+    cellElement.textContent = cell.adjacentMinesTotal.toString();
+
     cell.isOpen = true;
   });
 
