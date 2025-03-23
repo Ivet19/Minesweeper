@@ -15,11 +15,14 @@ export const getBoard = (dimension: number): Board => {
         hasMine: false,
         adjacentMinesTotal: 0,
         isOpen: false,
+        row: rowNumber,
+        column: columnNumber,
       };
 
       board[rowNumber][columnNumber] = cell;
     }
   }
-
   return board;
 };
+
+getBoard(4);
