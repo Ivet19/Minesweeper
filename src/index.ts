@@ -1,5 +1,5 @@
-import { getBoard } from "./board/factory/getBoard.js";
-import { addMines } from "./mines/factory/addMines.js";
+import { getBoard } from "./board/getBoard.js";
+import { addMines } from "./mines/addMines.js";
 import { renderBoard } from "./board/ui/renderBoard.js";
 import { setAdjacentMinesTotal } from "./board/adjacentMines/setAdjacentMines.js";
 

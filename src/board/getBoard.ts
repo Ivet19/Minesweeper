@@ -1,7 +1,8 @@
-import { Cell, Board } from "../../types";
+import { Cell, Board } from "../types";
 
 export const getBoard = (dimension: number): Board => {
-  if (dimension < 4) {
+  const isInvalidDimension = dimension < 4;
+  if (isInvalidDimension) {
     throw new Error("The minimum dimension is 4");
   }
 
@@ -22,6 +23,7 @@ export const getBoard = (dimension: number): Board => {
       board[rowNumber][columnNumber] = cell;
     }
   }
+
   return board;
 };
 
